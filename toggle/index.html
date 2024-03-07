@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Example</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- <button class="btn btn-primary" id="toggleButton">Toggle Element</button>
+<div id="elementToToggle" class="hidden">This is the element to toggle</div> -->
+
+<div class="mt-4">
+    <input type="checkbox" name="ciudades" id="verCiudades">
+    <label>Ver Ciudades</label><br><br>
+    <!-- DIVISIONES -->
+    <div id="divisiones" class="hidden row">
+        <!-- METRO -->
+        <div class="col-md-4">
+            <input type="checkbox" name="metro" id="verMetro">
+            <label>División Metro</label>
+            <div id="divMetro" class="hidden">
+                <div class="mt-2" id="divMetroN">
+                    <input type="checkbox" name="metroN" id="verMetroN">
+                    <label>Metro Norte</label>
+                    <!-- Ciudades Metro Norte -->
+                    <div id="divCiudadesMN" class="hidden">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Apan</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Sahagun</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Coacalco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Ecatepec</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Los Reyes Acozac</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Melchor Ocampo</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Ojo De Agua</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Tecamac</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Teotihuacan De Arista</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Tepexpan</label><br>
+                    </div>
+                </div>
+               <div class="mt-2" id="divMetroS">
+                <input type="checkbox" name="metroS" id="verMetroS">
+                <label>Metro Sur</label>
+                 <!-- Ciudades Metro Sur -->
+                 <div id="divCiudadesMS" class="hidden">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Amecameca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chalco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chimalhuacan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuautla</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuernavaca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Ixtapaluca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Los Reyes Acaquilpan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Nezahualcoyotl</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">San Buenaventura</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Texcoco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Yautepec</label><br>
+                </div>
+               </div> 
+            </div>
+        </div>
+        <!-- SUR -->
+        <div class="col-md-4">
+            <input type="checkbox" name="sur" id="verSur">
+            <label>División Sur</label>
+            <div id="divSur" class="hidden">
+                <div class="mt-2" id="divSurGolfo">
+                    <input type="checkbox" name="surG" id="verSurG">
+                    <label>Golfo</label>
+                    <!-- Ciudades Golfo -->
+                    <div id="divCiudadesSurG" class="hidden">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Altamira</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Apizaco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atencingo</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atlixco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Mante</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Valles</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Victoria</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cedral</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Chietla</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Izucar de Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matehuala</label><br>
+                    </div>
+                </div> <!--Aquí voy-->
+               <div class="mt-2" id="divMetroS">
+                <input type="checkbox" name="metroS" id="verMetroS">
+                <label>Occidente</label>
+                 <!-- Ciudades Occidente -->
+                 <div id="divCiudadesMS" class="hidden">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Amecameca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chalco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chimalhuacan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuautla</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuernavaca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Ixtapaluca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Los Reyes Acaquilpan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Nezahualcoyotl</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">San Buenaventura</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Texcoco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Yautepec</label><br>
+                </div>
+               </div> 
+               <div class="mt-2" id="divMetroS">
+                <input type="checkbox" name="metroS" id="verMetroS">
+                <label>Sureste</label>
+                 <!-- Ciudades Sureste -->
+                 <div id="divCiudadesMS" class="hidden">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Amecameca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chalco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Chimalhuacan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuautla</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cuernavaca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Ixtapaluca</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Los Reyes Acaquilpan</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Nezahualcoyotl</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">San Buenaventura</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Texcoco</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Yautepec</label><br>
+                </div>
+               </div> 
+            </div>
+        </div>
+        <!-- NORTE -->
+        <div class="col-md-4">
+            <input type="checkbox" name="norte" id="verNorte">
+            <label>División Norte</label>
+            <div id="divNorte" class="hidden">
+                <div class="mt-2" id="divNorteCentro">
+                    <input type="checkbox" name="norte" id="verNorte">
+                    <label>Centro</label>
+                    <!-- Ciudades Centro -->
+                    <div id="divCiudadesNorteC" class="hidden">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Altamira</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Apizaco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atencingo</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atlixco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Mante</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Valles</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Victoria</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cedral</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Chietla</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Izucar de Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matehuala</label><br>
+                    </div>
+                </div> <!--Aquí voy-->
+                <div class="mt-2" id="divNorteNoreste">
+                    <input type="checkbox" name="norte" id="verNorteNoreste">
+                    <label>Noreste</label>
+                    <!-- Ciudades Noreste -->
+                    <div id="divCiudadesNorteN" class="hidden">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Altamira</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Apizaco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atencingo</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atlixco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Mante</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Valles</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Victoria</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cedral</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Chietla</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Izucar de Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matehuala</label><br>
+                    </div>
+                </div>
+                <div class="mt-2" id="divNortePacifico">
+                    <input type="checkbox" name="norte" id="verNortePacifico">
+                    <label>Pacifico</label>
+                    <!-- Ciudades Noreste -->
+                    <div id="divCiudadesNorteP" class="hidden">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Altamira</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Apizaco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atencingo</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Atlixco</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Mante</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Valles</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cd Victoria</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Cedral</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Chietla</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Izucar de Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matamoros</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Matehuala</label><br>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
